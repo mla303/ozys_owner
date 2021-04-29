@@ -21,11 +21,11 @@ class BottomNavController extends GetxController {
         currentIndex = index;
         update();
         break;
-      case 1:
-        currentPage = ClientPage();
-        currentIndex = index;
-        update();
-        break;
+      // case 1:
+      //   currentPage = ClientPage();
+      //   currentIndex = index;
+      //   update();
+      //   break;
       case 2:
         currentPage = AddPage();
         currentIndex = index;

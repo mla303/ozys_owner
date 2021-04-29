@@ -45,33 +45,7 @@ class OnBording extends StatelessWidget {
               ),
 
               SizedBox(
-                height: 20,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Colors.lightBlue,
-                    radius: 6,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  CircleAvatar(
-                    backgroundColor: primary,
-                    radius: 4,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  CircleAvatar(
-                    backgroundColor: primary,
-                    radius: 4,
-                  )
-                ],
-              ),
-              SizedBox(
-                height: 40,
+                height: 60,
               ),
 
               CustomButton(

@@ -46,164 +46,164 @@ class YourServicesPage extends StatelessWidget {
               height: 55,
             ),
 //item for list
-          //1st item
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Icon(Icons.cancel,color: Colors.grey.withOpacity(0.4),size: 16,),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  'Haircut',
-                  style: TextStyle(fontSize: 16,color: Colors.black),
-                  textAlign: TextAlign.center,
-                ),
-                Spacer(),
-                Text(
-                  '40m',
-                  style: TextStyle(fontSize: 10),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'fixed',
-                      style: TextStyle(fontSize: 10),
-                      textAlign: TextAlign.center,
-                    ),
-                    Text(
-                      '\$30.00',
-                      style: TextStyle(fontSize: 14,color: Colors.black, fontWeight: FontWeight.w200),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                GestureDetector(
-                    onTap: () => Get.to(DeleteService()),
-                    child: Icon(Icons.arrow_forward_ios,color: Colors.grey.withOpacity(0.4),size: 16,)),
-              ],
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            Divider(),
-            SizedBox(
-              height: 5,
-            ),
-
-            //2nd item
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Icon(Icons.cancel,color: Colors.grey.withOpacity(0.4),size: 16,),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  'Color',
-                  style: TextStyle(fontSize: 16,color: Colors.black),
-                  textAlign: TextAlign.center,
-                ),
-                Spacer(),
-                Text(
-                  '40m',
-                  style: TextStyle(fontSize: 10),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Start at',
-                      style: TextStyle(fontSize: 10),
-                      textAlign: TextAlign.center,
-                    ),
-                    Text(
-                      '\$30.00',
-                      style: TextStyle(fontSize: 14,color: Colors.black, fontWeight: FontWeight.w200),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                GestureDetector(
-                    onTap: () => Get.to(DeleteService()),
-                    child: Icon(Icons.arrow_forward_ios,color: Colors.grey.withOpacity(0.4),size: 16,)),
-              ],
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            Divider(),
-            SizedBox(
-              height: 5,
-            ),
-            //3rd item
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Icon(Icons.cancel,color: Colors.grey.withOpacity(0.4),size: 16,),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  'Highlights',
-                  style: TextStyle(fontSize: 16,color: Colors.black),
-                  textAlign: TextAlign.center,
-                ),
-                Spacer(),
-                Text(
-                  '40m',
-                  style: TextStyle(fontSize: 10),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'fixed',
-                      style: TextStyle(fontSize: 10),
-                      textAlign: TextAlign.center,
-                    ),
-                    Text(
-                      '\$30.00',
-                      style: TextStyle(fontSize: 14,color: Colors.black, fontWeight: FontWeight.w200),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                GestureDetector(
-                    onTap: () => Get.to(DeleteService()),
-                    child: Icon(Icons.arrow_forward_ios,color: Colors.grey.withOpacity(0.4),size: 16,)),
-
-              ],
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            Divider(),
-            SizedBox(
-              height: 20,
-            ),
+//           //1st item
+//             Row(
+//               crossAxisAlignment: CrossAxisAlignment.end,
+//               children: [
+//                 Icon(Icons.cancel,color: Colors.grey.withOpacity(0.4),size: 16,),
+//                 SizedBox(
+//                   width: 10,
+//                 ),
+//                 Text(
+//                   'Haircut',
+//                   style: TextStyle(fontSize: 16,color: Colors.black),
+//                   textAlign: TextAlign.center,
+//                 ),
+//                 Spacer(),
+//                 Text(
+//                   '40m',
+//                   style: TextStyle(fontSize: 10),
+//                   textAlign: TextAlign.center,
+//                 ),
+//                 SizedBox(
+//                   width: 10,
+//                 ),
+//                 Column(
+//                   crossAxisAlignment: CrossAxisAlignment.start,
+//                   children: [
+//                     Text(
+//                       'fixed',
+//                       style: TextStyle(fontSize: 10),
+//                       textAlign: TextAlign.center,
+//                     ),
+//                     Text(
+//                       '\$30.00',
+//                       style: TextStyle(fontSize: 14,color: Colors.black, fontWeight: FontWeight.w200),
+//                       textAlign: TextAlign.center,
+//                     ),
+//                   ],
+//                 ),
+//                 SizedBox(
+//                   width: 10,
+//                 ),
+//                 GestureDetector(
+//                     onTap: () => Get.to(DeleteService()),
+//                     child: Icon(Icons.arrow_forward_ios,color: Colors.grey.withOpacity(0.4),size: 16,)),
+//               ],
+//             ),
+//             SizedBox(
+//               height: 5,
+//             ),
+//             Divider(),
+//             SizedBox(
+//               height: 5,
+//             ),
+//
+//             //2nd item
+//             Row(
+//               crossAxisAlignment: CrossAxisAlignment.end,
+//               children: [
+//                 Icon(Icons.cancel,color: Colors.grey.withOpacity(0.4),size: 16,),
+//                 SizedBox(
+//                   width: 10,
+//                 ),
+//                 Text(
+//                   'Color',
+//                   style: TextStyle(fontSize: 16,color: Colors.black),
+//                   textAlign: TextAlign.center,
+//                 ),
+//                 Spacer(),
+//                 Text(
+//                   '40m',
+//                   style: TextStyle(fontSize: 10),
+//                   textAlign: TextAlign.center,
+//                 ),
+//                 SizedBox(
+//                   width: 10,
+//                 ),
+//                 Column(
+//                   crossAxisAlignment: CrossAxisAlignment.start,
+//                   children: [
+//                     Text(
+//                       'Start at',
+//                       style: TextStyle(fontSize: 10),
+//                       textAlign: TextAlign.center,
+//                     ),
+//                     Text(
+//                       '\$30.00',
+//                       style: TextStyle(fontSize: 14,color: Colors.black, fontWeight: FontWeight.w200),
+//                       textAlign: TextAlign.center,
+//                     ),
+//                   ],
+//                 ),
+//                 SizedBox(
+//                   width: 10,
+//                 ),
+//                 GestureDetector(
+//                     onTap: () => Get.to(DeleteService()),
+//                     child: Icon(Icons.arrow_forward_ios,color: Colors.grey.withOpacity(0.4),size: 16,)),
+//               ],
+//             ),
+//             SizedBox(
+//               height: 5,
+//             ),
+//             Divider(),
+//             SizedBox(
+//               height: 5,
+//             ),
+//             //3rd item
+//             Row(
+//               crossAxisAlignment: CrossAxisAlignment.end,
+//               children: [
+//                 Icon(Icons.cancel,color: Colors.grey.withOpacity(0.4),size: 16,),
+//                 SizedBox(
+//                   width: 10,
+//                 ),
+//                 Text(
+//                   'Highlights',
+//                   style: TextStyle(fontSize: 16,color: Colors.black),
+//                   textAlign: TextAlign.center,
+//                 ),
+//                 Spacer(),
+//                 Text(
+//                   '40m',
+//                   style: TextStyle(fontSize: 10),
+//                   textAlign: TextAlign.center,
+//                 ),
+//                 SizedBox(
+//                   width: 10,
+//                 ),
+//                 Column(
+//                   crossAxisAlignment: CrossAxisAlignment.start,
+//                   children: [
+//                     Text(
+//                       'fixed',
+//                       style: TextStyle(fontSize: 10),
+//                       textAlign: TextAlign.center,
+//                     ),
+//                     Text(
+//                       '\$30.00',
+//                       style: TextStyle(fontSize: 14,color: Colors.black, fontWeight: FontWeight.w200),
+//                       textAlign: TextAlign.center,
+//                     ),
+//                   ],
+//                 ),
+//                 SizedBox(
+//                   width: 10,
+//                 ),
+//                 GestureDetector(
+//                     onTap: () => Get.to(DeleteService()),
+//                     child: Icon(Icons.arrow_forward_ios,color: Colors.grey.withOpacity(0.4),size: 16,)),
+//
+//               ],
+//             ),
+//             SizedBox(
+//               height: 5,
+//             ),
+//             Divider(),
+//             SizedBox(
+//               height: 20,
+//             ),
             GestureDetector(
               onTap: (){
                 Get.to(AddService());
@@ -216,7 +216,7 @@ class YourServicesPage extends StatelessWidget {
                     width: 5,
                   ),
                   Text(
-                    'Add another service',
+                    'Add Your service',
                     style: TextStyle(fontSize: 14,color: mainColor),
                     textAlign: TextAlign.center,
                   ),

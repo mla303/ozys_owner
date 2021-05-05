@@ -247,8 +247,11 @@ class CancelAppoimentTile extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
           border: Border.all(color: Color(0xffE2E0E0))),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
 
@@ -303,125 +306,9 @@ class CancelAppoimentTile extends StatelessWidget {
 
 
 
-          VerticalDivider(),
-
-          SizedBox(
-            width: 10,
-          ),
-
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-
-            children: [
-
-
-            Container(
-              width: 120,
-              child: Row(
-                children: [
-                  Text(
-                    '5',
-                    style: mediumFont.copyWith(fontSize: 12),
-                  ),
-                  SizedBox(width: 5,),
-                  Expanded(
-
-                      child: Divider(color: Colors.amber,
-                    thickness: 2,)),
-                  SizedBox(width: 5,),
-                  Text(
-                    '25',
-                    style: mediumFont.copyWith(fontSize: 12),
-                  ),
-                ],
-              ),
-            ),
-
-              Container(
-              width: 120,
-              child: Row(
-                children: [
-                  Text(
-                    '4',
-                    style: mediumFont.copyWith(fontSize: 12),
-                  ),
-                  SizedBox(width: 5,),
-                  Expanded(
-                      child: Divider(color: Colors.grey.withOpacity(0.5),
-                        thickness: 2,)),
-                  SizedBox(width: 5,),
-                  Text(
-                    '0',
-                    style: mediumFont.copyWith(fontSize: 12),
-                  ),
-                ],
-              ),
-            ),
-              Container(
-              width: 120,
-              child: Row(
-                children: [
-                  Text(
-                    '3',
-                    style: mediumFont.copyWith(fontSize: 12),
-                  ),
-                  SizedBox(width: 5,),
-                  Expanded(
-                      child: Divider(color: Colors.grey.withOpacity(0.5),
-                        thickness: 2,)),
-                  SizedBox(width: 5,),
-                  Text(
-                    '0',
-                    style: mediumFont.copyWith(fontSize: 12),
-                  ),
-                ],
-              ),
-            ),
-              Container(
-              width: 120,
-              child: Row(
-                children: [
-                  Text(
-                    '2',
-                    style: mediumFont.copyWith(fontSize: 12),
-                  ),
-                  SizedBox(width: 5,),
-                  Expanded(
-                      child: Divider(color: Colors.grey.withOpacity(0.5),
-                        thickness: 2,)),
-                  SizedBox(width: 5,),
-                  Text(
-                    '0',
-                    style: mediumFont.copyWith(fontSize: 12),
-                  ),
-                ],
-              ),
-            ),
-              Container(
-              width: 120,
-              child: Row(
-                children: [
-                  Text(
-                    '1',
-                    style: mediumFont.copyWith(fontSize: 12),
-                  ),
-                  SizedBox(width: 5,),
-                  Expanded(
-                      child: Divider(color: Colors.grey.withOpacity(0.5),
-                        thickness: 2,)),
-                  SizedBox(width: 5,),
-                  Text(
-                    '0',
-                    style: mediumFont.copyWith(fontSize: 12),
-                  ),
-                ],
-              ),
-            ),
 
 
 
-            ],
-          ),
 
         ],
       ),

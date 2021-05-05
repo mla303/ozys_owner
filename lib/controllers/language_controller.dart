@@ -6,9 +6,11 @@ class LanguageController extends GetxController {
   List<LanguageModel> todos = [
     LanguageModel(
       title: 'French',
+      flag: "assets/flags/france.png"
     ),
     LanguageModel(
       title: 'English',
+        flag: "assets/flags/english.png"
     ),
   ];
 

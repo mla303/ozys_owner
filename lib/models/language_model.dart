@@ -1,7 +1,8 @@
 class LanguageModel{
 
-  LanguageModel({this.title, });
+  LanguageModel({this.title,this.flag });
   String title;
+  String flag;
 
 
 

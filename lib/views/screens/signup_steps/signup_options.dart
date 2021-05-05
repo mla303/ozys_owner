@@ -24,17 +24,12 @@ class SignUpOption extends StatelessWidget {
           width: Get.width,
           margin: EdgeInsets.symmetric(horizontal: 10),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
-                height: 40,
-              ),
 
+SizedBox(height: Get.height/50,),
 
-              SizedBox(
-                height: 20,
-              ),
               Text(
                 'Start Your Setup',
                 style:
@@ -42,7 +37,7 @@ class SignUpOption extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: 20,
+                height: Get.height/70,
               ),
               Text(
                 'No Credit card. No Commitment.\nIt takes only 2 minutes',
@@ -52,7 +47,7 @@ class SignUpOption extends StatelessWidget {
 
 
               SizedBox(
-                height: 100,
+                height: Get.height/10,
               ),
 
               CustomButton(

@@ -1,23 +1,25 @@
 import 'package:circular_check_box/circular_check_box.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ozys_owner/controllers/language_controller.dart';
-import 'package:ozys_owner/models/language_model.dart';
+import 'package:ozys_owner/controllers/select_employee_controller.dart';
+import 'package:ozys_owner/controllers/select_service_controller.dart';
+import 'package:ozys_owner/models/select_emploee_model.dart';
+import 'package:ozys_owner/models/select_service_model.dart';
 import 'package:ozys_owner/views/widgets/appBar.dart';
 import 'package:ozys_owner/views/widgets/colors.dart';
-import 'package:ozys_owner/views/widgets/custom_continer.dart';
 
 
 
-class LanguagePage extends StatelessWidget {
+class SelectEmployees extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
 
+    SelectEmployeeController controller = Get.put(SelectEmployeeController());
     return Scaffold(
       appBar: appBar(
         centerTitle: true,
-        title: "Language",
+        title: "Select Service",
         height: 70,
         action: SizedBox(),
         leading: Icon(
@@ -34,8 +36,8 @@ class LanguagePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
 
-                GetBuilder<LanguageController>(
-                    init: LanguageController(),
+                GetBuilder<SelectEmployeeController>(
+                    init: SelectEmployeeController(),
                     builder: (controler) {
                       return Expanded(
                         child: ListView.builder(
@@ -46,7 +48,7 @@ class LanguagePage extends StatelessWidget {
                                   controler.changeStatus(
                                       controler.todos[index].title, value);
                                 },
-                                todo: controler.todos[index],
+                                todo: controller.todos[index],
                               );
                             }),
                       );
@@ -63,7 +65,7 @@ class LanguagePage extends StatelessWidget {
 
 
 class TodoTile extends StatefulWidget {
-  LanguageModel todo;
+  SelectEmployeeModel todo;
   ValueChanged onPress;
 
   TodoTile({this.todo, this.onPress});
@@ -78,25 +80,11 @@ class _TodoTileState extends State<TodoTile> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 10),
+      margin: EdgeInsets.only(left: 16, top: 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-            children: [
-              CustomMyAvatar(
-                width: 25.0,
-                height: 25.0,
-                data: (widget.todo.flag),
-                colr: mainColor,
-                bgColor: mainColor,
-              ),
-              SizedBox(width: 10,),
-              Text(widget.todo.title, style: TextStyle(color: Colors.black),),
-
-
-            ],
-          ),
+          Text(widget.todo.title, style: TextStyle(color: Colors.black),),
           CircularCheckBox(
               activeColor: mainColor,
               checkColor: Colors.white,
@@ -108,6 +96,7 @@ class _TodoTileState extends State<TodoTile> {
                   widget.onPress(value);
                 });
               }),
+
         ],
       ),
     );

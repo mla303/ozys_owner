@@ -40,7 +40,7 @@ class SignInPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 50,
+                height: Get.height/50,
               ),
               Text('Email Address'),
               CustomTextField(
@@ -74,7 +74,7 @@ class SignInPage extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 21,
+                height: Get.height/60,
               ),
               CustomButton(
                   lable: 'Login',
@@ -87,7 +87,7 @@ class SignInPage extends StatelessWidget {
                   radius: 12,
                   borderColor: primaryColor),
               SizedBox(
-                height: 30,
+                height: Get.height/60,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -129,7 +129,7 @@ class SignInPage extends StatelessWidget {
                     iconPath: 'assets/images/google.png'),
               ),
               SizedBox(
-                height: 70,
+                height: Get.height/20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

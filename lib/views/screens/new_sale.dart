@@ -178,25 +178,12 @@ class NewSale extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    DropdownButton(
-                      hint: Text('Payment via',style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
-                        color: Colors.black
-                      ),), // Not necessary for Option 1
-                      value: _selectedLocation,
-                      onChanged: (newValue) {
-                        // _selectedLocation =newValue;
-                        // setState(() {
-                        //   _selectedLocation = newValue;
-                        // });
-                      },
-                      items: _locations.map((location) {
-                        return DropdownMenuItem(
-                          child: new Text(location),
-                          value: location,
-                        );
-                      }).toList(),
+                    Text(
+                      'Cash', // its simple text, it will come from database
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: Get.height / 40,
+                          fontWeight: FontWeight.w600),
                     ),
                   Text('\$700',
                       style: TextStyle(

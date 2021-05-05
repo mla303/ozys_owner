@@ -30,48 +30,8 @@ class AddPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
 
-                SizedBox(height: Get.height/30,),
-                InkWell(
-                  onTap: () {
 
-                   Get.to(NewAppointment());
 
-                  },
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.calendar_today_outlined,
-                              size: Get.height / 30,
-                              color: Colors.grey,
-                            ),
-                            SizedBox(
-                              width: Get.width / 30,
-                            ),
-                            Text(
-                              'New Appointment',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.black,
-                                  fontSize: Get.height / 50),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Icon(
-                        Icons.arrow_forward_ios,
-                        size: Get.height / 45,
-                        color: Colors.grey,
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
                 Divider(
                   color: Colors.grey,
                 ),

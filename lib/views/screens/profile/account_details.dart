@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ozys_owner/views/screens/profile/change_password.dart';
 import 'package:ozys_owner/views/widgets/appBar.dart';
 import 'package:ozys_owner/views/widgets/colors.dart';
 import 'package:ozys_owner/views/widgets/custom_button.dart';

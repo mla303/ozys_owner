@@ -25,10 +25,10 @@ class BottomNavBar extends StatelessWidget {
                   icon: Icon(Icons.featured_play_list),
                   label: 'Sales',
                 ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.people_alt),
-                  label: 'Client',
-                ),
+                // BottomNavigationBarItem(
+                //   icon: Icon(Icons.people_alt),
+                //   label: 'Client',
+                // ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.add_box_rounded),
                   label: 'Add',

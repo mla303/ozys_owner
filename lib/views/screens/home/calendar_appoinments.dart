@@ -35,14 +35,7 @@ class CalendarAppoinmentPage extends StatelessWidget {
             SizedBox(width: 10,)
           ],
         )),
-        leading: GestureDetector(
-          onTap: (){
-            Get.to(CalendarOptions());
-          },
-          child: Icon(
-            Icons.filter_alt,
-          ),
-        ),
+        leading: SizedBox(),
       ),
       body: SfCalendar(
         allowedViews: [
@@ -100,8 +93,6 @@ class CalendarAppoinmentPage extends StatelessWidget {
     final DateTime startTime1 =
     DateTime(today.year, today.month, today.day, 12, 0, 0);
     final DateTime endTime1 = startTime1.add(const Duration(hours: 2));
-
-
     final DateTime startTime2 =
     DateTime(today.year, today.month, today.day, 6, 0, 0);
     final DateTime endTime2 = startTime2.add(const Duration(hours: 2));

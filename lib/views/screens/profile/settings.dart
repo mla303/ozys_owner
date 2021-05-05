@@ -42,41 +42,6 @@ class Settings extends StatelessWidget {
                       color: Colors.black,
                       fontSize: Get.height / 40),
                 ),
-                SizedBox(height: Get.height/80,),
-                Divider(
-                  color: Colors.grey,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Show Notifications',
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
-                          fontSize: Get.height / 50),
-                    ),
-                    Obx(
-                          () => Switch(
-                          activeColor: Colors.blue,
-                          value: controller.showNotifications.value,
-                          onChanged: (val) => controller.toggle()),
-                    ),
-                  ],
-                ),
-
-                Divider(
-                  color: Colors.grey,
-                ),
-                SizedBox(height: Get.height/80,),
-
-                Text(
-                  'IF APPOINTMENT STATUS CHANGES, NOTIFY ME BY',
-                  style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                      color: Colors.black,
-                      fontSize: Get.height / 60),
-                ),
 
                 SizedBox(height: Get.height/80,),
                 Divider(
@@ -121,7 +86,9 @@ class Settings extends StatelessWidget {
                  height: Get.height/6,
                  child: Column(
                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                   children: [ InkWell(
+                   children: [
+
+                     InkWell(
                    onTap: () {
 
                      Get.to(LanguagePage());

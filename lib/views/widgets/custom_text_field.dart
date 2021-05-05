@@ -29,7 +29,7 @@ class CustomTextField extends StatelessWidget {
         children: [
           Expanded(
               child: TextFormField(
-                readOnly: enable,
+               // readOnly: enable,
             obscureText: obscuretext,
             controller: txtController,
             onTap: ontap,

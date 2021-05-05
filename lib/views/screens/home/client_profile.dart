@@ -31,7 +31,7 @@ class ClientProfile extends StatelessWidget {
     return Scaffold(
       appBar: appBar(
         centerTitle: true,
-        title: "Client Profile",
+        title: "Owner Profile",
         height: 70,
         action: Center(child: Row(
           children: [
@@ -108,7 +108,7 @@ class ClientProfile extends StatelessWidget {
                         textAlign: TextAlign.center,
                       ),
                       Text(
-                        'Booking',
+                        'Completed',
                         style:
                         heding.copyWith(fontSize: 14, fontWeight: FontWeight.bold),
                         textAlign: TextAlign.center,
@@ -126,7 +126,7 @@ class ClientProfile extends StatelessWidget {
                         textAlign: TextAlign.center,
                       ),
                       Text(
-                        'Finished',
+                        'Upcoming',
                         style:
                         heding.copyWith(fontSize: 14, fontWeight: FontWeight.bold),
                         textAlign: TextAlign.center,

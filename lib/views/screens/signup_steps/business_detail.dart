@@ -17,7 +17,7 @@ class BusinessDetails extends StatelessWidget {
       appBar: appBar(
         centerTitle: true,
         title: "About You",
-        height: 70,
+        height: Get.height/12,
         action: SizedBox(),
         leading: Icon(
           Icons.arrow_back_ios,
@@ -36,7 +36,7 @@ class BusinessDetails extends StatelessWidget {
 
 
                 SizedBox(
-                  height: 20,
+                  height: Get.height/50,
                 ),
                 Center(
                   child: Text(

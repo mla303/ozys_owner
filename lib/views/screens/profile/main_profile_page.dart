@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ozys_owner/views/screens/home/client_profile.dart';
+import 'package:ozys_owner/views/screens/profile/language.dart';
+import 'package:ozys_owner/views/screens/profile/settings.dart';
 import 'package:ozys_owner/views/widgets/appBar.dart';
 import 'package:ozys_owner/views/widgets/colors.dart';
 import 'package:ozys_owner/views/widgets/custom_button.dart';
@@ -73,7 +75,7 @@ class MainProfilePage extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: (){
-                            Get.to(ClientProfile());
+                            // Get.to(ClientProfile());
                           },
                           child: Text(
                             'Ali talib',
@@ -104,7 +106,7 @@ SizedBox(height: Get.height/20,),
                    InkWell(
                      onTap: () {
 
-                       Get.to(AccountAndSettings());
+                       Get.to(Settings());
 
                      },
                      child: Row(
@@ -122,7 +124,7 @@ SizedBox(height: Get.height/20,),
                                  width: Get.width / 30,
                                ),
                                Text(
-                                 'Account Setting',
+                                 'Settings',
                                  style: TextStyle(
                                      fontWeight: FontWeight.w500,
                                      color: Colors.black,
@@ -252,7 +254,7 @@ SizedBox(height: Get.height/20,),
                                  width: Get.width / 30,
                                ),
                                Text(
-                                 'Payment',
+                                 'Payment History',
                                  style: TextStyle(
                                      fontWeight: FontWeight.w500,
                                      color: Colors.black,

@@ -4,6 +4,7 @@ import 'package:ozys_owner/views/screens/add_Page.dart';
 import 'package:ozys_owner/views/screens/home/calendar_appoinments.dart';
 import 'package:ozys_owner/views/screens/home/client.dart';
 import 'package:ozys_owner/views/screens/home/sales.dart';
+import 'package:ozys_owner/views/screens/new_time_reservation.dart';
 import 'package:ozys_owner/views/screens/profile/main_profile_page.dart';
 
 
@@ -26,17 +27,17 @@ class BottomNavController extends GetxController {
       //   currentIndex = index;
       //   update();
       //   break;
-      case 2:
-        currentPage = AddPage();
+      case 1:
+        currentPage = NewTimeReservation();
         currentIndex = index;
         update();
         break;
-      case 3:
+      case 2:
         currentPage = CalendarAppoinmentPage();
         currentIndex = index;
         update();
         break;
-      case 4:
+      case 3:
         currentPage = MainProfilePage();
         currentIndex = index;
         update();

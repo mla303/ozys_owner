@@ -35,9 +35,15 @@ class FeedbackAndSupport extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                RatingBarIndicator(
+                RatingBar.builder(
+                  unratedColor: Colors.black12,
                   direction: Axis.horizontal,
-                  rating: 5,
+                  // rating: 5,
+                  allowHalfRating: true,
+                  initialRating: 3,
+                  maxRating: 5,
+                  minRating: 1,
+
                   itemSize: 30,
                   itemCount: 5,
                   itemPadding: EdgeInsets.symmetric(horizontal: 0.0),
@@ -45,6 +51,7 @@ class FeedbackAndSupport extends StatelessWidget {
                     Icons.star,
                     color: Colors.amber,
                   ),
+
                 ),
 SizedBox(height: Get.height/60,),
 Text('Tell us a bit more about why you chose us', style: TextStyle(fontWeight: FontWeight.w600, fontSize: Get.height/50),),

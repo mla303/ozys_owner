@@ -5,6 +5,7 @@ import 'package:ozys_owner/controllers/country_controller.dart';
 import 'package:ozys_owner/models/country_model.dart';
 import 'package:ozys_owner/views/widgets/appBar.dart';
 import 'package:ozys_owner/views/widgets/colors.dart';
+import 'package:ozys_owner/views/widgets/custom_continer.dart';
 
 
 
@@ -82,7 +83,22 @@ class _TodoTileState extends State<TodoTile> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(widget.todo.title, style: TextStyle(color: Colors.black),),
+
+          Row(
+            children: [
+              CustomMyAvatar(
+                width: 25.0,
+                height: 25.0,
+                data: (widget.todo.c_flag),
+                colr: mainColor,
+                bgColor: mainColor,
+              ),
+              SizedBox(width: 10,),
+              Text(widget.todo.title, style: TextStyle(color: Colors.black),),
+
+
+            ],
+          ),
           CircularCheckBox(
               activeColor: mainColor,
               checkColor: Colors.white,

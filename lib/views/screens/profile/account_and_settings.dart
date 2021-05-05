@@ -94,35 +94,7 @@ class AccountAndSettings extends StatelessWidget {
                     Divider(
                       color: Colors.grey,
                     ),
-                      SizedBox(height: 10,),
-                    InkWell(
-                      onTap: () {
 
-                        Get.to(Settings());
-
-                      },
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            'Settings',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w500,
-                                color: Colors.black,
-                                fontSize: Get.height / 50),
-                          ),
-                          Icon(
-                            Icons.arrow_forward_ios,
-                            size: Get.height / 45,
-                            color: Colors.grey,
-                          ),
-                        ],
-                      ),
-                    ),
-                      SizedBox(height: 10,),
-                    Divider(
-                      color: Colors.grey,
-                    ),
                       SizedBox(height: 10,),
                     InkWell(
                       onTap: () {

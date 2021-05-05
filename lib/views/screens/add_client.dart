@@ -140,7 +140,8 @@ class AddClient extends StatelessWidget {
                               hintText2: 'Enter DOB',
                               textInputType: TextInputType.datetime,
                               ontap: () {
-                                DatePicker.showDatePicker(context,
+                                DatePicker.showDatePicker(
+                                    context,
                                     showTitleActions: true,
                                     minTime: DateTime(1950, 3, 5),
                                     maxTime: DateTime(2022, 12, 31),

@@ -40,23 +40,7 @@ class PaymentDetailPage extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              GestureDetector(
-                onTap: (){
-                  Get.to(AddPaymentCard());
-                },
-                child: Center(
-                  child: Text(
-                    "Tap to Add card info",
-                    style: mediumFont.copyWith(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black),
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 50,
-              ),
+
               PaymentHistoryTile(
                   data: data, data2: data2, data3: data3, data4: data4),
 

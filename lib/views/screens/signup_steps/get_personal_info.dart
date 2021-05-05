@@ -19,7 +19,7 @@ class GetPersonalInfo extends StatelessWidget {
       appBar: appBar(
         centerTitle: true,
         title: "Setup your business",
-        height: 70,
+        height: Get.height/12,
         action: SizedBox(),
         leading: Icon(
           Icons.arrow_back_ios
@@ -39,16 +39,16 @@ class GetPersonalInfo extends StatelessWidget {
 
 
                 SizedBox(
-                  height: 20,
+                  height: Get.height/70,
                 ),
                 Text(
                   'Let\'s Get Your Business Online!',
                   style:
-                  heding.copyWith(fontSize: 24, fontWeight: FontWeight.bold),
+                  heding.copyWith(fontSize: Get.height/30, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
-                  height: 10,
+                  height: Get.height/70,
                 ),
                 Center(
                   child: Text(
@@ -58,7 +58,7 @@ class GetPersonalInfo extends StatelessWidget {
                 ),
 
                 SizedBox(
-                  height: 30,
+                  height: Get.height/50,
                 ),
 
                 Text('Full Name',),
